@@ -1,16 +1,26 @@
 package com.example.whatsappchatbot.model;
 
-import lombok.Data;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
-@Data
 public class WhatsAppResponse {
-    private String messaging_product;
-    private String to;
-    private ArrayOfMessage messages;
+    @JsonProperty("messaging_product")
+    private String messagingProduct = "whatsapp";
     
-    public WhatsAppResponse(String to, String text) {
-        this.messaging_product = "whatsapp";
-        this.to = to;
-        this.messages = new ArrayOfMessage(new Message(text));
+    private ResponseObject[] contacts;
+    private ResponseObject[] messages;
+    
+    public WhatsAppResponse(ResponseObject[] contacts, ResponseObject[] messages) {
+        this.contacts = contacts;
+        this.messages = messages;
     }
+    
+    // Getters and Setters
+    public String getMessagingProduct() { return messagingProduct; }
+    public void setMessagingProduct(String messagingProduct) { this.messagingProduct = messagingProduct; }
+    
+    public ResponseObject[] getContacts() { return contacts; }
+    public void setContacts(ResponseObject[] contacts) { this.contacts = contacts; }
+    
+    public ResponseObject[] getMessages() { return messages; }
+    public void setMessages(ResponseObject[] messages) { this.messages = messages; }
 }

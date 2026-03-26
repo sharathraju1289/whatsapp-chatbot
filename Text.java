@@ -1,12 +1,8 @@
 package com.example.whatsappchatbot.model;
 
-import lombok.Data;
-
-@Data
 public class Text {
-    private String body;
+    private Body body;
     
-    public Text(String body) {
-        this.body = body;
-    }
+    public Body getBody() { return body; }
+    public void setBody(Body body) { this.body = body; }
 }

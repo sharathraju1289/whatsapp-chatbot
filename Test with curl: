@@ -1,0 +1,16 @@
+# Test webhook verification
+curl "http://localhost:8080/webhook?hub.mode=subscribe&hub.verify_token=your_verify_token_here&hub.challenge=test"
+
+# Test message (WhatsApp webhook format)
+curl -X POST http://localhost:8080/webhook \
+  -H "Content-Type: application/json" \
+  -d '{
+    "entry": [{
+      "changes": [{
+        "value": {
+          "from": "1234567890",
+          "text": {"body": "hi"}
+        }
+      }]
+    }]
+  }'

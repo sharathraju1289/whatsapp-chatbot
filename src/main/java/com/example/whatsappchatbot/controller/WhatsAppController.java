@@ -17,7 +17,7 @@ public class WhatsAppController {
     
     private static final Logger logger = LoggerFactory.getLogger(WhatsAppController.class);
     
-    @Autowired
+@Autowired(required = false)
     private MessageLogRepository messageLogRepository;
 
     @Value("${whatsapp.verify.token:myfallbacktoken}")
@@ -41,11 +41,14 @@ public class WhatsAppController {
                 // Generate response
                 String responseText = generateResponse(userMessage);
                 
-                // Log the message
+                // Log the message if DB available
                 MessageLog log = new MessageLog(messageId, userPhone, userMessage, responseText);
-                messageLogRepository.save(log);
-                
-                logger.info("Logged message and sending response: {}", responseText);
+                if (messageLogRepository != null) {
+                    messageLogRepository.save(log);
+                    logger.info("Logged message and sending response: {}", responseText);
+                } else {
+                    logger.warn("No database available, skipping log save for message: {}", messageId);
+                }
                 
                 // Create WhatsApp response
                 ResponseObject[] contacts = {new ResponseObject("delivery", userPhone)};

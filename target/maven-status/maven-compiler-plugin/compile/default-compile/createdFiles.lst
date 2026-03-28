@@ -14,4 +14,5 @@ com/example/whatsappchatbot/model/Text.class
 com/example/whatsappchatbot/model/Value.class
 com/example/whatsappchatbot/model/Metadata.class
 com/example/whatsappchatbot/model/Message.class
+com/example/whatsappchatbot/controller/HealthController.class
 com/example/whatsappchatbot/model/Change.class

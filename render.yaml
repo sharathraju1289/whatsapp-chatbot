@@ -7,3 +7,5 @@ services:
     envVars:
       - key: JAVA_OPTS
         value: -Xmx512m
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod

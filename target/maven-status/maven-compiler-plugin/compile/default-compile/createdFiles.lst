@@ -1,0 +1,17 @@
+com/example/whatsappchatbot/repository/MessageLogRepository.class
+com/example/whatsappchatbot/model/Entry.class
+com/example/whatsappchatbot/model/WhatsAppRequest.class
+com/example/whatsappchatbot/model/ResponseObject.class
+com/example/whatsappchatbot/model/Contact.class
+com/example/whatsappchatbot/controller/WhatsAppController.class
+com/example/whatsappchatbot/WhatsAppChatbotApplication.class
+com/example/whatsappchatbot/model/WhatsAppResponse.class
+com/example/whatsappchatbot/model/BodyResponse.class
+com/example/whatsappchatbot/model/TextResponse.class
+com/example/whatsappchatbot/model/Body.class
+com/example/whatsappchatbot/entity/MessageLog.class
+com/example/whatsappchatbot/model/Text.class
+com/example/whatsappchatbot/model/Value.class
+com/example/whatsappchatbot/model/Metadata.class
+com/example/whatsappchatbot/model/Message.class
+com/example/whatsappchatbot/model/Change.class

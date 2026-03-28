@@ -1,0 +1,17 @@
+/Users/muddulurisharathkumarraju/whatsapp-chatbot/src/main/java/com/example/whatsappchatbot/model/Entry.java
+/Users/muddulurisharathkumarraju/whatsapp-chatbot/src/main/java/com/example/whatsappchatbot/model/BodyResponse.java
+/Users/muddulurisharathkumarraju/whatsapp-chatbot/src/main/java/com/example/whatsappchatbot/model/Body.java
+/Users/muddulurisharathkumarraju/whatsapp-chatbot/src/main/java/com/example/whatsappchatbot/model/WhatsAppRequest.java
+/Users/muddulurisharathkumarraju/whatsapp-chatbot/src/main/java/com/example/whatsappchatbot/model/Text.java
+/Users/muddulurisharathkumarraju/whatsapp-chatbot/src/main/java/com/example/whatsappchatbot/WhatsAppChatbotApplication.java
+/Users/muddulurisharathkumarraju/whatsapp-chatbot/src/main/java/com/example/whatsappchatbot/entity/MessageLog.java
+/Users/muddulurisharathkumarraju/whatsapp-chatbot/src/main/java/com/example/whatsappchatbot/repository/MessageLogRepository.java
+/Users/muddulurisharathkumarraju/whatsapp-chatbot/src/main/java/com/example/whatsappchatbot/controller/WhatsAppController.java
+/Users/muddulurisharathkumarraju/whatsapp-chatbot/src/main/java/com/example/whatsappchatbot/model/Contact.java
+/Users/muddulurisharathkumarraju/whatsapp-chatbot/src/main/java/com/example/whatsappchatbot/model/WhatsAppResponse.java
+/Users/muddulurisharathkumarraju/whatsapp-chatbot/src/main/java/com/example/whatsappchatbot/model/Value.java
+/Users/muddulurisharathkumarraju/whatsapp-chatbot/src/main/java/com/example/whatsappchatbot/model/Metadata.java
+/Users/muddulurisharathkumarraju/whatsapp-chatbot/src/main/java/com/example/whatsappchatbot/model/Message.java
+/Users/muddulurisharathkumarraju/whatsapp-chatbot/src/main/java/com/example/whatsappchatbot/model/Change.java
+/Users/muddulurisharathkumarraju/whatsapp-chatbot/src/main/java/com/example/whatsappchatbot/model/ResponseObject.java
+/Users/muddulurisharathkumarraju/whatsapp-chatbot/src/main/java/com/example/whatsappchatbot/model/TextResponse.java

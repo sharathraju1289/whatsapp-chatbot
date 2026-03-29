@@ -59,6 +59,18 @@ Check logs/DB for entry.
 3. Auto-detects `render.yaml` (Maven build → JAR → prod profile)
 4. Test deployed URL: `https://your-app.onrender.com/webhook`
 
+## Deploy from VS Code with Render CLI (Recommended)
+1. Install Render CLI: `npm i -g render` (in VS Code terminal)
+2. Login: `render login`
+3. Build JAR: `Ctrl+Shift+P` → "Tasks: Run Task" → "Maven: Build JAR (prod)"
+4. Deploy: "Deploy to Render" task (auto-builds if needed, uses render.yaml)
+5. Or terminal: `render deploy`
+
+**VS Code Tasks (.vscode/tasks.json)**:
+- **Maven: Build JAR (prod)**: `./mvnw clean package -DskipTests`
+- **Local: Run Dev**: `./mvnw spring-boot:run` (H2 local)
+- **Deploy to Render**: `render deploy` (prod PostgreSQL)
+
 ## Architecture
 ```
 WhatsApp Webhook JSON → Controller → Log (Console/DB) → Simple Reply Logic → WhatsApp Response JSON

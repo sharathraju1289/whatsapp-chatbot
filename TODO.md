@@ -37,3 +37,14 @@ curl -X POST http://localhost:8080/webhook \
 Expected: Logs saved, response with "Hello! 👋..."
 
 **Ready for submission: GitHub repo + 2-3 min demo video (local/deployed tests).**
+
+
+## Connect Render to VS Code [IN PROGRESS ✅ Started]
+- [x] Create .vscode/tasks.json for Maven build, local run, Render deploy
+- [x] Update README.md with VS Code/CLI instructions
+- [x] Install Render CLI via npm & brew: `npm i -g render` + `brew install render` (v2.15.0)
+- [ ] Login: `render login`
+- [ ] Deploy: `Ctrl+Shift+P` > "Tasks: Run Task" > "Deploy to Render" (or terminal `render deploy`)
+- [ ] Test health/webhook on deployed URL
+- [ ] Deploy: `Ctrl+Shift+P` > "Tasks: Run Task" > "Deploy to Render" (or terminal `render deploy`)
+- [ ] Test health/webhook on deployed URL
